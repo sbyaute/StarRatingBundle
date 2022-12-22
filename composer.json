@@ -5,19 +5,6 @@
     "keywords": ["rating", "star", "bundle", "symfony", "symfony4", "symfony5"],
     "homepage": "http://github.com/sbyaute/StarRatingBundle",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Sbyaute",
-            "email": ""
-        },
-        {
-            "name": "Derick Felsman",
-            "email": ""
-        },
-        {
-            "name": "Steven Ng"
-        }
-    ],
     "require": {
         "php": ">=7.1",
         "symfony/twig-bundle": ">=4.4"
