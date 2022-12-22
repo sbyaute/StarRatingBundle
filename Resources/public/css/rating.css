@@ -12,7 +12,7 @@
 }
 
 .rating div.star , .rating span.star {
-    font-family:FontAwesome;
+    font-family:bootstrap-icons;
     font-weight:normal;
     font-style:normal;
     font-size: 25px;
@@ -25,18 +25,18 @@
 }
 
 .rating div.star:before, .rating span.star:before {
-    content:"\f006";
+    content:"\f586";
     padding-right:5px;
     color:#999;
 }
 
 .rating div.star:hover:before,.rating div.star:hover~div.star:before, .rating span.star:hover:before,.rating span.star:hover~span.star:before {
-    content:"\f005";
+    content:"\f588";
     color:#e3cf7a;
 }
 
 .rating div.star-full, .rating span.star-full {
-    font-family:FontAwesome;
+    font-family:bootstrap-icons;
     font-weight:normal;
     font-style:normal;
     font-size: 25px;
@@ -45,13 +45,13 @@
 }
 
 .rating div.star-full:before, .rating span.star-full:before  {
-    content:"\f005";
+    content:"\f588";
     padding-right:5px;
     color:#e3cf7a;
 }
 
 .rating div.star-empty, .rating span.star-empty {
-    font-family:FontAwesome;
+    font-family:bootstrap-icons;
     font-weight:normal;
     font-style:normal;
     font-size: 25px;
@@ -60,7 +60,7 @@
 }
 
 .rating div.star-empty:before ,.rating span.star-empty:before  {
-    content:"\f006";
+    content:"\f586";
     padding-right:5px;
     color:#999;
 }
