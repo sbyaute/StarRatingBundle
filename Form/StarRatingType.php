@@ -8,7 +8,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\FormInterface;
 use Symfony\Component\Form\FormView;
 
-class RatingType extends AbstractType
+class StarRatingType extends AbstractType
 {
 
     public function buildView(FormView $view, FormInterface $form, array $options)
@@ -36,6 +36,6 @@ class RatingType extends AbstractType
 
     public function getName()
     {
-        return 'rating';
+        return 'star_rating';
     }
 }
