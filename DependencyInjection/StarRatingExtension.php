@@ -19,6 +19,7 @@ class StarRatingExtension extends Extension
      */
     public function load(array $configs, ContainerBuilder $container)
     {
+        /*
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
@@ -30,5 +31,6 @@ class StarRatingExtension extends Extension
         $resources = $container->getParameter('twig.form.resources');
         $resources = array_merge(array('@SbyauteStarRatingBundle/rating.html.twig'), $resources);
         $container->setParameter('twig.form.resources', $resources);
+        */
     }
 }
