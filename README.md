@@ -1,15 +1,7 @@
 StarRatingBundle
 ================
 
-This is a fork of the blackknight467 StarRatingBundle and support symfony 4!
-
-
-Old  Readme
-===========
-
-Star Rating Bundle for Symfony 3.  Requires Jquery and Font Awesome.
-
-If Using Symfony 2.  Use version 1.*
+Star Rating Bundle for Symfony 5.  Requires Jquery and Bootstrap icon.
 
 Sample Output
 =============
@@ -26,7 +18,7 @@ Installation
 Add the following to the "require" section of your `composer.json` file:
 
 ```
-    "blackknight467/star-rating-bundle": "2.*"
+    "sbyaute/star-rating-bundle": "1.*"
 ```
 
 ### Step 2: Enable the bundle
@@ -41,7 +33,7 @@ public function registerBundles()
 {
     $bundles = array(
         // ...
-        new blackknight467\StarRatingBundle\StarRatingBundle(),
+        new sbyaute\StarRatingBundle\StarRatingBundle(),
     );
 }
 ```
@@ -61,14 +53,6 @@ Add the css in your page head
 ```
   <link rel="stylesheet" type="text/css" href="{{ asset('bundles/starrating/css/rating.css') }}" />
 ```
-or
-```
-	{% stylesheets
-      'bundles/starrating/css/rating.css'
-      filter="cssrewrite" %}
-      <link href="{{ asset_url }}" rel="stylesheet" type="text/css" />
-    {% endstylesheets %}
-```
 
 ### Step 4: Add the js
 
@@ -77,15 +61,6 @@ Add the javascript to your page head
     <!-- make sure that jquery is included --!>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script src="{{ asset('bundles/starrating/js/rating.js') }}"></script>
-```
-or
-```
-    <!-- make sure that jquery is included --!>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-	{% javascripts
-      '@StarRatingBundle/Resources/public/js/rating.js' %}
-      <script src="{{ asset_url }}"></script>
-    {% endjavascripts %}
 ```
 
 Usage
@@ -96,7 +71,7 @@ Usage
 ```php
 <?php
     // ...
-    $builder->add('rating', RatingType::class, [
+    $builder->add('rating', StarRatingType::class, [
     	'label' => 'Rating'
     ]);
     // ...
@@ -105,7 +80,7 @@ or for a custom rating scale:
 ```php
 <?php
     // ...
-    $builder->add('rating', RatingType::class, [
+    $builder->add('rating', StarRatingType::class, [
     	//...
     	'stars' => 4,
     	//...
