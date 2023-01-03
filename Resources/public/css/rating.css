@@ -25,13 +25,13 @@
 }
 
 .rating div.star:before, .rating span.star:before {
-    content:"\f586";
+    content:"\f588";
     padding-right:5px;
     color:#999;
 }
 
 .rating div.star:hover:before,.rating div.star:hover~div.star:before, .rating span.star:hover:before,.rating span.star:hover~span.star:before {
-    content:"\f588";
+    content:"\f586";
     color:#e3cf7a;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .rating div.star-full:before, .rating span.star-full:before  {
-    content:"\f588";
+    content:"\f586";
     padding-right:5px;
     color:#e3cf7a;
 }
@@ -60,7 +60,7 @@
 }
 
 .rating div.star-empty:before ,.rating span.star-empty:before  {
-    content:"\f586";
+    content:"\f588";
     padding-right:5px;
     color:#999;
 }
